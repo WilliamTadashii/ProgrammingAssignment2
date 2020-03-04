@@ -1,8 +1,13 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
-
+# ===========================================================================
+# The present script aims to compute the matrix inversion  and cache the 
+# result so it might have considerable gain in performance.
+# ===========================================================================
+#
+# ===========================================================================
+# The function below creates a object of matrix type and cache its inverse.
+# It is built from the function MakeVector
+# ===========================================================================
 makeCacheMatrix <- function(x = matrix()) {
         ## Creates a object matrix with functions to get and set the inverse 
 	m <- NULL
@@ -17,7 +22,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+# ===========================================================================
+# The function below compute the matrix inversion and cache its result.
+# It is built from the function cachemean
+# ===========================================================================
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
